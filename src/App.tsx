@@ -103,6 +103,7 @@ const sehema = yup.object().shape({
 function App() {
   const [open, setOpen] = useState(false);
   const [isConfirm, setIsConfirm] = useState<boolean>(false);
+
   const price = 1_250;
 
   const handleCloseDialog = () => {
