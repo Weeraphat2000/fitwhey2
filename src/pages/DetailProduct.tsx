@@ -27,6 +27,8 @@ import {
 import SwipeableViews from "react-swipeable-views";
 import { toast } from "react-toastify";
 
+import ButtonHome from "../components/ButtonHome";
+
 const qaData = [
   {
     question: "What is the difference between whey A and whey B?",
@@ -74,6 +76,7 @@ export default function DetailProduct() {
 
   return (
     <div>
+      <ButtonHome />
       <Carousel
         showArrows={true}
         // showThumbs={false}

@@ -16,6 +16,8 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { Controller, FormProvider, useForm } from "react-hook-form";
 
+import ButtonHome from "../components/ButtonHome";
+
 interface Size {
   size: string;
   disabled: boolean;
@@ -143,6 +145,8 @@ export function ModalFitWhey() {
         padding: 2,
       }}
     >
+      <ButtonHome />
+
       <Dialog
         open={isConfirm}
         onClose={() => {
